@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI導入コンサルティング | 90日で始める次世代競争力</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #111827;
+            --primary-color: #38bdf8;
+            --secondary-color: #818cf8;
+            --accent-color: #facc15;
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: var(--bg-color);
+            color: #e5e7eb;
+        }
+        .font-jp {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .bento-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @keyframes intermittent-shake {
+            0%, 100% { transform: translateX(0); }
+            2%, 6% { transform: translateX(-4px); }
+            4%, 8% { transform: translateX(4px); }
+        }
+        .intermittent-shake-button {
+            animation: intermittent-shake 1.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-30 backdrop-blur-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h2 class="text-2xl font-bold tracking-tighter">AI-STARTER</h2>
+            <a href="https://lin.ee/Ic7gzxx" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">LINEで無料診断</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center text-center pt-20">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight font-jp">
+                <span class="gradient-text">あなたの経験価値</span>を<br>AIで最大化する
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 text-gray-400 max-w-3xl mx-auto font-jp">
+                90日で競争優位を確立する、経営層のためのAI導入スタータープログラム
+            </p>
+            <a href="https://lin.ee/Ic7gzxx" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full transition duration-300 transform hover:scale-105 shadow-lg inline-block intermittent-shake-button">
+                <i class="fab fa-line mr-2"></i>今すぐLINEで無料診断
+            </a>
+        </div>
+    </section>
+
+    <!-- Pain Points Section (Bento Grid) -->
+    <section id="pain-points" class="py-20 scroll-reveal">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 font-jp">まだ踏み出せない、<span class="gradient-text">5つの理由</span></h2>
+            <div class="bento-grid">
+                <div class="bento-item md:col-span-2">
+                    <i class="fas fa-map-signs text-3xl text-blue-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">具体像が描けない</h3>
+                    <p class="text-gray-400">AIを何に活かせるのか、費用対効果が見えない。</p>
+                </div>
+                <div class="bento-item">
+                    <i class="fas fa-users-slash text-3xl text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">人材がいない</h3>
+                    <p class="text-gray-400">推進できる人材がおらず、外部委託も不安。</p>
+                </div>
+                <div class="bento-item">
+                    <i class="fas fa-chart-pie text-3xl text-purple-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">ROIが見えない</h3>
+                    <p class="text-gray-400">投資対効果を説明できず、経営層を説得できない。</p>
+                </div>
+                <div class="bento-item">
+                    <i class="fas fa-user-shield text-3xl text-pink-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">現場の抵抗</h3>
+                    <p class="text-gray-400">"AIアレルギー"があり、導入が進まない。</p>
+                </div>
+                <div class="bento-item">
+                    <i class="fas fa-shield-halved text-3xl text-red-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">リスクが不安</h3>
+                    <p class="text-gray-400">セキュリティや法規制が不明瞭で決断できない。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-gray-800 scroll-reveal">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 font-jp">その悩み、<span class="gradient-text">90日</span>で解決します</h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto font-jp">
+                私たちは「最初の一歩」に特化した伴走型コンサルティングで、<br>AI導入の成功体験を創出します。
+            </p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-700 p-8 rounded-lg">
+                    <i class="fas fa-road text-3xl text-blue-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">戦略策定</h3>
+                    <p class="text-gray-400">貴社だけのAIロードマップを策定</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg">
+                    <i class="fas fa-users text-3xl text-indigo-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">人材育成</h3>
+                    <p class="text-gray-400">社員参加型ワークショップで意識改革</p>
+                </div>
+                <div class="bg-gray-700 p-8 rounded-lg">
+                    <i class="fas fa-chart-line text-3xl text-purple-400 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2 font-jp">ROI最大化</h3>
+                    <p class="text-gray-400">成果の見える化と継続的な改善</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Voice Section -->
+    <section id="voice" class="py-20 scroll-reveal">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 font-jp">導入企業様の<span class="gradient-text">喜びの声</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bento-item p-0 overflow-hidden"><img src="voice/愛知県　Mさん　40代.jpg" alt="お客様の声 1" class="w-full h-full object-cover"></div>
+                <div class="bento-item p-0 overflow-hidden"><img src="voice/茨城県　Hさん　30代.jpg" alt="お客様の声 2" class="w-full h-full object-cover"></div>
+                <div class="bento-item p-0 overflow-hidden"><img src="voice/新潟県　Kさん　30代.jpg" alt="お客様の声 3" class="w-full h-full object-cover"></div>
+                <div class="bento-item p-0 overflow-hidden"><img src="voice/大阪府　Yさん　30代.jpg" alt="お客様の声 4" class="w-full h-full object-cover"></div>
+                <div class="bento-item p-0 overflow-hidden"><img src="voice/東京都　Kさん　40代.jpg" alt="お客様の声 5" class="w-full h-full object-cover"></div>
+                <div class="bento-item p-0 overflow-hidden"><img src="voice/東京都　青山さん　50代.jpg" alt="お客様の声 6" class="w-full h-full object-cover"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-20 scroll-reveal">
+        <div class="container mx-auto px-6">
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-12 text-center text-white">
+                <h2 class="text-4xl font-bold mb-4 font-jp">無料AI導入診断、実施中</h2>
+                <p class="text-xl mb-8 font-jp">まずは30分のオンライン診断で、貴社の可能性を可視化しませんか？</p>
+                <div class="max-w-md mx-auto">
+                    <a href="https://lin.ee/Ic7gzxx" target="_blank" rel="noopener noreferrer" class="block w-full bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 px-8 rounded-lg transition duration-300 text-center intermittent-shake-button">
+                        <i class="fab fa-line mr-2"></i>LINEで無料診断を予約する
+                    </a>
+                    <p class="text-sm text-gray-300 mt-4">ボタンをタップして、LINEで友だち追加してください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 AI-STARTER. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(this.getAttribute('href'));
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Scroll Reveal Animation
+            const revealElements = document.querySelectorAll('.scroll-reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
